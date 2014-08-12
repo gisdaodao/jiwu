@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanoramaApp1", "PanoramaApp1\PanoramaApp1.csproj", "{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2B208BDC-A7D1-4034-8856-E8864C26355E}"
+	ProjectSection(SolutionItems) = preProject
+		HTMLPage1.html = HTMLPage1.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Debug|ARM.Build.0 = Debug|ARM
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Debug|ARM.Deploy.0 = Debug|ARM
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Debug|x86.ActiveCfg = Debug|x86
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Debug|x86.Build.0 = Debug|x86
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Debug|x86.Deploy.0 = Debug|x86
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Release|ARM.ActiveCfg = Release|ARM
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Release|ARM.Build.0 = Release|ARM
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Release|ARM.Deploy.0 = Release|ARM
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Release|x86.ActiveCfg = Release|x86
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Release|x86.Build.0 = Release|x86
+		{596D384D-6EF4-459E-91CB-35D1E0BCDC4D}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
