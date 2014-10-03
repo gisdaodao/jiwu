@@ -7,6 +7,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    xmlns:jad="clr-namespace:JiuYouWp8Ad;assembly=JiuYouWp8Ad"
+   xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
   xmlns:GoogleAds="clr-namespace:GoogleAds;assembly=GoogleAds"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
@@ -87,6 +89,10 @@
                         <GoogleAds:AdView AdUnitID="ca-app-pub-1598808565430684/2520727654" Format="Banner"></GoogleAds:AdView>
                         <GoogleAds:AdView AdUnitID="ca-app-pub-1598808565430684/2520727654" Format="Banner"></GoogleAds:AdView>
                         <GoogleAds:AdView AdUnitID="ca-app-pub-1598808565430684/2520727654" Format="Banner"></GoogleAds:AdView>
+                        <MediaElement x:Name="media" Source="/Assets/1201250291412222461128.mp3" AutoPlay="True"></MediaElement>
+                        <toolkit:ToggleSwitch  FontSize="36" Header="music"  Click="ToggleSwitch_Click" Checked="ToggleSwitch_Checked" ></toolkit:ToggleSwitch>
+                        <jad:JiuYouWp8AdControl x:Name="adjiu" DeveloperAdID=""></jad:JiuYouWp8AdControl>
+                     
                     </StackPanel>
                 </Grid>
             </phone:PanoramaItem>

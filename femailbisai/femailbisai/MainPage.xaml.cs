@@ -29,6 +29,7 @@ namespace femailbisai
             // NOTE: You can edit the event handler to do something custom here. Once the
             // interstitial is received it can be shown whenever you want.
             interstitialAd.ReceivedAd += OnAdReceived;
+            adjiu.Start();
             AdRequest adRequest = new AdRequest();
             adRequest.ForceTesting = false;
             interstitialAd.LoadAd(adRequest);
@@ -44,6 +45,7 @@ namespace femailbisai
             {
                 interstitialAd.ShowAd();
             }
+           
         }
         // 为 ViewModel 项加载数据
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -107,6 +109,37 @@ namespace femailbisai
                 
             }
            
+        }
+
+        private void ToggleSwitch_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ToggleSwitch_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                ToggleSwitch obj = sender as ToggleSwitch;
+                if (obj.IsChecked.Value)
+                {
+                    media.Stop();
+                }
+                else
+                {
+                    media.Play();
+                }
+            }
+            catch (Exception)
+            {
+                
+               
+            }
+            finally
+            {
+                media.Stop();
+            }
+            
         }
 
       
