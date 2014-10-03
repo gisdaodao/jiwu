@@ -49,7 +49,7 @@
                     
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <Image Source="{Binding}"  ></Image>
+                            <Image  Tap="Image_Tap"  Source="{Binding}"  ></Image>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                   

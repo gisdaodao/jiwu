@@ -2,5 +2,6 @@
   <Deployment.Parts>
     <AssemblyPart x:Name="femailbisai" Source="femailbisai.dll" />
     <AssemblyPart x:Name="GoogleAds" Source="GoogleAds.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
   </Deployment.Parts>
 </Deployment>

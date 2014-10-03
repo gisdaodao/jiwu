@@ -54,27 +54,37 @@ namespace femailbisai
 
         void Pclient_OpenReadCompleted(object sender, OpenReadCompletedEventArgs e)
         {
-            if(e.Error==null)
+            try
             {
-                Stream stream = e.Result;
-                XElement p = XElement.Load(stream);
-            
-                XName xname = XName.Get("url");
-                IEnumerable<XElement> nodes= p.Descendants(xname).ToList<XElement>();
-                foreach(var a in nodes)
+                if (e.Error == null)
                 {
-                    urls.Add(a.Value);
-                }
-                Deployment.Current.Dispatcher.BeginInvoke(() => { lstbox.ItemsSource = urls; });
-                XName xitemname = XName.Get("item");
-                IEnumerable<XElement> itemnodes = p.Descendants(xitemname).ToList<XElement>();
-                foreach (var b in itemnodes)
-                {
+                    Stream stream = e.Result;
+                    XElement p = XElement.Load(stream);
 
-                    items.Add(new Info() { text = b.FirstAttribute.Value, info = b.LastAttribute.Value });
+                    XName xname = XName.Get("url");
+                    IEnumerable<XElement> nodes = p.Descendants(xname).ToList<XElement>();
+                    foreach (var a in nodes)
+                    {
+                        urls.Add(a.Value);
+                    }
+                    Deployment.Current.Dispatcher.BeginInvoke(() => { lstbox.ItemsSource = urls; });
+                    XName xitemname = XName.Get("item");
+                    IEnumerable<XElement> itemnodes = p.Descendants(xitemname).ToList<XElement>();
+                    foreach (var b in itemnodes)
+                    {
+
+                        items.Add(new Info() { text = b.FirstAttribute.Value, info = b.LastAttribute.Value });
+                    }
+                    Deployment.Current.Dispatcher.BeginInvoke(() => { longlistbox.ItemsSource = items; });
                 }
-                Deployment.Current.Dispatcher.BeginInvoke(() => { longlistbox.ItemsSource = items; });
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                
+               
+            }
+            
         
         }
 
@@ -82,6 +92,21 @@ namespace femailbisai
         {
             MarketplaceReviewTask task = new MarketplaceReviewTask();
             task.Show();
+        }
+
+        private void Image_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            try
+            {
+                Image obj = sender as Image;
+                Helper.ShowDetailpic(obj);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                
+            }
+           
         }
 
       
