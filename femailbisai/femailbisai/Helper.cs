@@ -11,6 +11,8 @@ namespace femailbisai
 {
    public class Helper
     {
+       int k = 0;
+
        public static void ShowDetailpic(Image obj)
        {
            CustomMessageBox imgmessgaebox = new CustomMessageBox();

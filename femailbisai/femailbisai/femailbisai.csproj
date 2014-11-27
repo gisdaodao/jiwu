@@ -128,6 +128,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\1201250291412222461128.mp3" />
     <Content Include="log.png" />
     <Resource Include="Assets\PanoramaBackground.png" />
     <Content Include="Assets\AlignmentGrid.png" />
@@ -159,7 +160,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="GoogleAds">
-      <HintPath>C:\Users\admin\Desktop\GoogleAds.dll</HintPath>
+      <HintPath>F:\迅雷下载\googlemobileadssdkwindowsphone8\lib\windowsphone8\GoogleAds.dll</HintPath>
+    </Reference>
+    <Reference Include="JiuYouWp8Ad">
+      <HintPath>..\..\..\JiuYouWp8Ad.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>F:\newapp\美女大尺寸\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
